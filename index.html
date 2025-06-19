@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Candy Shop Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1> 🍬 Welcome to My Candy Shop Portfolio 🍬</h1>
+
+  <p class="intro" id="typewriter">
+    Hi there! I'm Sadeesha, a sweet-to-the-core software engineer who loves crafting beautiful UIs and building functional, user-friendly fullstack applications.  
+    Each candy jar below represents a project I've created with love, code, and a sprinkle of creativity.  
+    Hover over to see the details, and grab your favorite from GitHub! 🍫💻
+  </p>
+
+  <div id="filter">
+    <button onclick="filterProjects('All')">All</button>
+    <button onclick="filterProjects('Frontend')">Frontend</button>
+    <button onclick="filterProjects('Backend')">Backend</button>
+    <button onclick="filterProjects('Fullstack')">Fullstack</button>
+  </div>
+
+  <div id="portfolio" class="candy-shop"></div>
+
+<div class="section-row">
+  <section id="skills">
+    <h2>🍥 Bake With Me</h2>
+    <div class="skills-vertical">
+      <img src="images/cheff-hat.png" class="candy-pic" alt="Candy Top" />
+      <ul>
+        <li>🍫 HTML, CSS, TypeScript</li>
+        <li>🍓 React & Frontend UI</li>
+        <li>🍯 Java, JavaScript, PHP, C++, C#</li>
+        <li>🍪 Figma UI, Unity, Android Studio</li>
+      </ul>
+  
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Send Me a Candy Letter 🍭</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Sweet Message" required></textarea>
+      <button type="submit">Send 💌</button>
+    </form>
+  </section>
+</div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

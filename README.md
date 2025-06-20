@@ -35,8 +35,8 @@ Each candy jar in this site represents one of my projects — hover to reveal th
 
 If you like my sweet style and want to collaborate or hire me:
 
-- 💌 Email: your.email@example.com *(or add your real one)*
-- 🌸 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com)
+- 💌 Email: sadeeshanilakshi25@gmail.com
+- 🌸 LinkedIn: www.linkedin.com/in/sadeesha-nilakshini-a592b529a
 - 🐱 GitHub: [@SadeeNilakshi](https://github.com/SadeeNilakshi)
 
 ---

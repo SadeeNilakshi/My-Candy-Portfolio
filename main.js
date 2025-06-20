@@ -131,20 +131,9 @@ var projects = [
     image: "images/happy.png",
     type: "Fullstack"
   }
-  // {
-  //   title: "E-Shop Ecommerce Web Application",
-  //   description: "Cute and Cozy ECommerce Web",
-  //   github: "https://github.com/SadeeNilakshi/Cute-Cozy-E-Commerce-Web.git",
-  //   image: "images/toffees.png"
-  // },
-  // {
-  //   title: "Bubble Button Animations",
-  //   description: "Cute and Cozy ECommerce Web",
-  //   github: "https://github.com/SadeeNilakshi/Cute-Cozy-E-Commerce-Web.git",
-  //   image: "images/toffee_1.png"
-  // }
+
 ];
-// 🍬 Render Projects
+
 function renderProjects(filtered) {
     if (filtered === void 0) { filtered = projects; }
     if (!container)
@@ -163,12 +152,12 @@ function renderProjects(filtered) {
         info.className = "jar-info";
         info.innerHTML = "\n      <p>".concat(project.description, "</p>\n      <a href=\"").concat(project.github, "\" target=\"_blank\">\uD83C\uDF6D GitHub</a>\n    ");
         jar.appendChild(img);
-        jar.appendChild(title); // Title under image
+        jar.appendChild(title); 
         jar.appendChild(info);
         container.appendChild(jar);
     });
 }
-// 🍭 Filter Projects (make global)
+
 window.filterProjects = function (type) {
     if (type === "All") {
         renderProjects();
@@ -178,7 +167,7 @@ window.filterProjects = function (type) {
         renderProjects(filtered);
     }
 };
-// ✨ Sparkle Effect
+
 function createSparkle() {
     var sparkle = document.createElement("div");
     sparkle.className = "sparkle";
@@ -188,7 +177,7 @@ function createSparkle() {
     setTimeout(function () { return sparkle.remove(); }, 5000);
 }
 setInterval(createSparkle, 300);
-// 🍬 Floating Candy Emojis
+
 function createFloatingCandy() {
     var emojis = ["🍭", "🍬", "🍫", "🍡"];
     var candy = document.createElement("div");
@@ -199,5 +188,5 @@ function createFloatingCandy() {
     setTimeout(function () { return candy.remove(); }, 8000);
 }
 setInterval(createFloatingCandy, 600);
-// 🍓 Initial render
+
 renderProjects();

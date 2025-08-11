@@ -141,7 +141,6 @@ const projects: Project[] = [
   }
 ];
 
-// 🍬 Render Projects
 function renderProjects(filtered: Project[] = projects): void {
   if (!container) return;
   container.innerHTML = "";
@@ -166,13 +165,12 @@ function renderProjects(filtered: Project[] = projects): void {
     `;
 
     jar.appendChild(img);
-    jar.appendChild(title); // Title under image
+    jar.appendChild(title); 
     jar.appendChild(info);
     container.appendChild(jar);
   });
 }
 
-// 🍭 Filter Projects (make global)
 (window as any).filterProjects = function(type: string) {
   if (type === "All") {
     renderProjects();
@@ -182,7 +180,7 @@ function renderProjects(filtered: Project[] = projects): void {
   }
 };
 
-// ✨ Sparkle Effect
+
 function createSparkle(): void {
   const sparkle = document.createElement("div");
   sparkle.className = "sparkle";
@@ -195,7 +193,6 @@ function createSparkle(): void {
 
 setInterval(createSparkle, 300);
 
-// 🍬 Floating Candy Emojis
 function createFloatingCandy(): void {
   const emojis = ["🍭", "🍬", "🍫", "🍡"];
   const candy = document.createElement("div");
@@ -209,7 +206,6 @@ function createFloatingCandy(): void {
 
 setInterval(createFloatingCandy, 600);
 
-// 🍓 Initial render
 renderProjects();
 
 
